@@ -15,7 +15,16 @@
             <li><a href="apie.html">Apie</a></li>
             <li><a href="aprasimas.html">Aprasimas</a></li>
             <li><a href="darbai.html">Atlikti darbai</a></li>
-            <li><a href="gallery.html">Galerija</a></li>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Katalogas</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="galleryMedžiai.html">Medžiai</a>
+                  <a href="galleryBalionai.html">Balionai</a>
+                  <a href="galleryKalnai.html">Kalnai</a>
+                </div>
+              </div>
+
             <li><a href="paslaugos.html">Paslaugos</a></li>
         </ul>
     </nav>
@@ -24,5 +33,24 @@
      <p><b>tekstas, </b></p>
      <p><i>tekstas, </i></p>
      <p><u>tekstas, </u></p>
+     <script>
+        function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                  }
+                  
+                  // Close the dropdown menu if the user clicks outside of it
+                  window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                      var dropdowns = document.getElementsByClassName("dropdown-content");
+                      var i;
+                      for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
+                        }
+                      }
+                    }
+                  }
+        </script>
 </body>
 </html>
