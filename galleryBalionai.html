@@ -9,27 +9,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Pradzia</a></li>
-            <li><a href="apie.html">Apie</a></li>
-            <li><a href="aprasimas.html">Aprasimas</a></li>
-            <li><a href="darbai.html">Atlikti darbai</a></li>
+  <nav>
+    <ul>
+        <li><a href="index.html#pradzia">Pradzia</a></li>
+        <li><a href="index.html#apie">Apie</a></li>
+        <li><a href="index.html#aprasimas">Aprasimas</a></li>
+        <li><a href="index.html#darbai">Atlikti darbai</a></li>
 
-            <li class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Katalogas</button>
-                <ul id="myDropdown" class="dropdown-content">
-                  <li><a href="galleryMedžiai.html">Medžiai</a></li>
-                  <li><a href="galleryBalionai.html">Balionai</a></li>
-                  <li><a href="galleryKalnai.html">Kalnai</a></li>
-                </ul>
-            </li>
-            <li><a href="paslaugos.html">Paslaugos</a></li>
-        </ul>
-    </nav>
+        <li class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Katalogas</button>
+            <ul id="myDropdown" class="dropdown-content">
+              <li><a href="galleryMedžiai.html">Medžiai</a></li>
+              <li><a href="galleryBalionai.html">Balionai</a></li>
+              <li><a href="galleryKalnai.html">Kalnai</a></li>
+            </ul>
+        </li>
+        <li><a href="index.html#paslaugos">Paslaugos</a></li>
+    </ul>
+</nav>
+
+
     <div class="gallery">
         <img src="img/gallery-2.jpg" alt="Paveikslėlis 2">
     </div>
+
+
     <script>
         function myFunction() {
                     document.getElementById("myDropdown").classList.toggle("show");
