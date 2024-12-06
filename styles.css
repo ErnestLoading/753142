@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    background-color: #000;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: row;
     /*padding-bottom: 300px;*/
@@ -15,97 +15,187 @@ body {
     
     
 }
-
-
+main {
+  margin-left: 15vw; /* Pastumk turinį pagal meniu plotį */
+  padding: 2vh;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #f1f1f1;
+  --text-color: #000000;
+  --text-hover: #3b3b3b;
+  --background-menu: #acacac;
+}
+.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --text-hover: #cdcdcd;
+  --background-menu: #3e3e3e;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+/* var(--background-color)
+var(--text-color) */
 #pradzia {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 16px; 
 }
 /*/////////////////////////////////////*/
 #apie {
-  top: 500px;
+  top: 50vh;
   font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 100px; 
+  font-size: 10vw; 
   position: relative;
-  content: "";
-  display: table;
-  clear: both;
+  
 }
-.container {
-  max-width: 1140px; /* Maksimalus plotis */
-  margin: 0 auto; /* Centruotas lygiavimas */
-  padding: 30px 15px; /* Vidiniai tarpai */
+/* .container {
+  max-width: 50vw;
+  margin: 0 auto;
+  padding: 3vw 1vw; 
 }
-/* Rikiuojama eilutė */
 .skills-content {
-  display: flex; /* Eilutės stiliaus išdėstymas */
-  flex-wrap: wrap; /* Leisti eilučių sulūžimą, jei reikia */
-  justify-content: space-between; /* Paskirstyti elementus */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
 }
-/* Animacija sklandžiam atsiradimui */
 .skills-animation {
-  animation: fadeIn 1s ease-in-out; /* 1 sekundės fade-in efektas */
+  animation: fadeIn 0s ease-in-out; 
 }
 @keyframes fadeIn {
   from {
-      opacity: 0; /* Nematomas pradžioje */
+      opacity: 0;
   }
   to {
-      opacity: 1; /* Matomas pabaigoje */
+      opacity: 1;
   }
+} */
+/* .progress {
+  margin-bottom: 3vh;
 }
-/* Stilius kiekvienam įgūdžių elementui */
-.progress {
-  margin-bottom: 20px; /* Tarpas tarp juostų */
-}
-/* Rėmelis aplink progress bar */
-.progress-bar-wrap {
+.progress-bar-wra {
   width: 20vw;
-  background: #e4e4e4; /* Pilka spalva kaip pagrindas */
-  border-radius: 5px; /* Kampų užapvalinimas */
-  overflow: hidden; /* Išvengiama išsikišimų */
+  background: #e4e4e4; 
+  border-radius: 5px; /
+  overflow: hidden;
 }
-/* Tikroji juosta */
-.progress-bar {
-  height: 10px; /* Aukštis */
-  background-color: #007bff; /* Mėlyna spalva */
-  width: 0%; /* Pradinė juostos padėtis (dinamiškai keisis) */
-  transition: width 1s ease-in-out; /* Sklandus pločio keitimas */
+.progress-ba {
+  height: 1vh; 
+  background-color: #007bff; 
+  width: 0%; 
+  transition: width 1s ease-in-out; 
 }
-/* Teksto stilius virš progress bar */
-.skill {
-  font-size: 16px; /* Šrifto dydis */
-  font-weight: bold; /* Pariebintas tekstas */
-  display: flex; /* Rikiavimas eilutėje */
-  justify-content: space-between; /* Paskirstymas tarp pavadinimo ir procentų */
-  margin-bottom: 5px; /* Tarpas po tekstu */
+.skill1 {
+  font-size: 1vw;
+  font-weight: bold;
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 1vw; 
 }
 .skill .val {
-  color: #007bff; /* Mėlyna procentų spalva */
+  color: #007bff;
 }
-/* Progresijų pločiai pagal HTML atributus */
-.progress-bar[aria-valuenow="100"] {
-  width: 100%; /* 100% pločio */
+.progress-ba[aria-valuenow="11"] {
+  width: 20%;
 }
-.progress-bar[aria-valuenow="90"] {
-  width: 90%; /* 90% pločio */
+.progress-ba[aria-valuenow="12"] {
+  width: 15%;
 }
-.progress-bar[aria-valuenow="80"] {
-  width: 80%; /* 80% pločio */
+.progress-ba[aria-valuenow="13"] {
+  width: 2%;
 }
-.progress-bar[aria-valuenow="75"] {
-  width: 75%; /* 75% pločio */
+.progress-ba[aria-valuenow="21"] {
+  width: 0%;
 }
-.progress-bar[aria-valuenow="55"] {
-  width: 55%; /* 55% pločio */
+.progress-ba[aria-valuenow="22"] {
+  width: 0%;
+}
+.progress-ba[aria-valuenow="23"] {
+  width: 10%;
+} */
+.skill-item {
+  margin-bottom: 20px; /* Tarpas tarp juostų */
+}
+.skill-title {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px; /* Tarpas tarp teksto ir juostos */
+}
+.progress {
+  height: 20px; /* Progresų juostų aukštis */
+  border-radius: 10px; /* Kampų užapvalinimas */
+  background-color: #bdc3c9; /* Pilkšvas fonas */
+}
+.progress-bar {
+  font-weight: bold;
+  line-height: 20px; /* Centruoja tekstą vertikaliai */
 }
 /*/////////////////////////////////////*/
+.filter-btn {
+  background: none;
+  border: none;
+  font-size: 1vw;
+  margin: 0 1vw;
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+.filter-btn:hover {
+  color: #0056b3;
+}
+.gallery-item {
+  display: none;
+  width: 15vw;
+  text-align: center;
+}
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/*/////////////////////////////////////*/
+.sidebar {
+  width: 280px;
+}
+.sidebar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+}
+.sidebar h4 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.nav-link {
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+.nav-link:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+.fab{
+  background-color: rgb(54, 54, 54);
+  color: white;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
 nav {
     position: fixed;        /* Fiksuota pozicija */
     top: 0;                 /* Meniu prasideda nuo viršaus */
     left: 0;               /* Priglunda prie dešinės pusės */
     width: 15vw;           /* Plotis */
-    background-color: #222; /* Fonas */
+    background-color: black; /* Fonas */
     height: 100vh;          /* Užima visą lango aukštį */
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Šiek tiek šešėlio */
     z-index: 2;
@@ -121,8 +211,52 @@ nav li {
 }
 nav a {
     text-decoration: none;
-    color: #ddd;
+    color: rgb(210, 210, 210);
 }
+.migtukas:hover {
+  color: white; /* Kai užvedama pele */
+}
+.migtukas:active {
+  background-color: #ffffff;
+}
+.dropbtn {
+  background-color: black;
+  color: rgb(210, 210, 210);
+  padding: 1px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  left: 0;
+}
+.dropbtn:hover, .dropbtn:focus {
+  color: white;
+}
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(53, 53, 53);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+.dropdown-content a {
+  color: rgb(210, 210, 210);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+.dropdown-content a:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.show {display:block;}
+/*/////////////////////////////////////*/
 /*/////////////////////////////////////*/
 /* h1{
     color: aquamarine;
@@ -223,38 +357,7 @@ padding: 10px;
   
 
 /*/////////////////////////////////////*/
-.dropbtn {
-    background-color: #222;
-    color: #ddd;
-    padding: 1px;
-    font-size: 15px;
-    border: none;
-    cursor: pointer;
-  }
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #222;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #393939;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  .dropdown-content a {
-    color: #ddd;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {background-color: #ddd;}
-  .show {display:block;}
-/*/////////////////////////////////////*/
+
 
 .gallery-6 {
   /*position: fixed;  Fiksuotas paveikslėlio pozicionavimas */
@@ -290,3 +393,44 @@ padding: 10px;
     height: 400px;
 }
 /*/////////////////////////////////////*/
+
+
+
+/* Poraštė */
+footer {
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 20px 0; 
+  text-align: center; 
+  position: relative; 
+  bottom: 0;
+  width: 85vw; 
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column; /* Elementai vertikaliai */
+  align-items: center; /* Horizontaliai centruojama */
+}
+
+.social-icons {
+  margin-bottom: 10px; /* Tarpas tarp ikonų ir kontaktinės informacijos */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px; /* Horizontalus tarpas tarp ikonų */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #00aced; /* Užvedus pelės žymeklį, spalva keičiasi */
+}
+
+.contact-info p {
+  margin: 5px 0; /* Mažas tarpas tarp eilučių */
+  font-size: 14px;
+}
