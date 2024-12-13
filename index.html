@@ -10,22 +10,8 @@
     <title>kar kar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
 
-      <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
 <body>
@@ -45,13 +31,13 @@
       </div>
       <hr>
         <ul>
-            <li><a class="migtukas bi bi-house navicon" href="index.html#pradzia">🏠Pradzia</a></li>
+            <li><a style="z-index: 10" class="migtukas bi bi-house navicon" href="index.html#pradzia">🏠Pradzia</a></li>
             <li><a class="migtukas bi bi-house navicon" href="index.html#apie">😐Apie</a></li>
             <li><a class="migtukas" href="index.html#aprasimas">📄Aprasimas</a></li>
             <li><a class="migtukas" href="index.html#darbai">🖼️Atlikti darbai</a></li>
 
             <li class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">🗄Katalogas</button>
+                <button onclick="myFunction()" class="dropbtn migtukas">🗄Katalogas</button>
                 <ul id="myDropdown" class="dropdown-content">
                   <li><a href="galleryMedžiai.html">Medžiai</a></li>
                   <li><a href="galleryBalionai.html">Balionai</a></li>
@@ -60,10 +46,10 @@
             </li>
             <li><a class="migtukas" href="index.html#paslaugos">✉️Paslaugos</a></li>
         </ul>
+        <div id="clock" style="bottom: 1vh;"></div>
     </nav>
   </header>
   <main>
-
     scroll-behavior: smooth;
 
     <section id="pradzia" style="position: absolute; top: 0; left: 0vw;" >
@@ -87,8 +73,8 @@
       </div>
     </section> -->
     <section id="apie" style="color: var(--text-color); position: absolute; top: 101vh; left: 15vw; font-family: Arial, sans-serif; font-size: 2vh; ">
-      <h5 style="margin-left: 5vw; margin-bottom: 5vh;">Apie mane</h5>
-      <h2 style="margin-left: 5vw; margin-right: 2vw; margin-bottom: 6vh;">Esu hdsflushj dfgkjhd gfuygfjhbdsfjg dgh gfiuerg hi kyrfg uyugnr fuy guy fgrsuyg fj hsgfjhsb jh f ejsgfrjhvbfjhba rgfg a vhj bqwvu.</h2>
+      <h5 style="margin-left: 10vw; margin-bottom: 5vh;">Apie mane</h5>
+      <h2 style="margin-left: 10vw; margin-right: 2vw; margin-bottom: 6vh;">Esu hdsflushj dfgkjhd gfuygfjhbdsfjg dgh gfiuerg hi kyrfg uyugnr fuy guy fgrsuyg fj hsgfjhsb jh f ejsgfrjhvbfjhba rgfg a vhj bqwvu.</h2>
       
       <div class="apie9" style="display: flex; align-items: flex-start; gap: 20px; margin-top: 20px;">
         <img src="img/apie.jpg" alt="Paveikslėlis6" style="width: 20vw; height: 40vh; z-index: -1; object-fit: cover;margin-left: 10vw;">
@@ -200,6 +186,43 @@
         <div class="column" style="width: 50%; padding: 10px; box-sizing: border-box;">
           <p style="font-family: Arial; font-size: 1vw; font-weight: bold;">Senior graphic design specialist.</p>
           <p style="font-family: Arial; font-size: 0.8vw; font-weight: normal;">Experion, New York, NY.</p>
+          <math>
+            <mi>σ</mi>
+            <mo>=</mo>
+            <msqrt>
+              <mfrac>
+                <mn>1</mn>
+                <mi>N</mi>
+              </mfrac>
+              <munderover>
+                <mo>∑</mo>
+                <mrow>
+                  <mi>i</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mrow>
+                <mi>N</mi>
+              </munderover>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <msub>
+                    <mi>x</mi>
+                    <mi>i</mi>
+                  </msub>
+                  <mo>−</mo>
+                  <mi>μ</mi>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </msqrt>
+          </math>
+          <br>
+          <mi>σ</mi><mo>= standartinis nuokrypis</mo><br>
+          <mi>N</mi><mo>= duomenų taškų skaičius</mo><br>
+          <mi>μ</mi><mo>= vidurkis</mo><br>
+          <mi>x</mi><mo>= duomenu taškas</mo><br>
           <p style="font-family: Arial; font-size: 0.8vw; font-weight: normal;">Lead in the design, development, and implementation of the graphic, layout, and production communication materials.</p>
           <p style="font-family: Arial; font-size: 0.8vw; font-weight: normal;">Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project..</p>
           <p style="font-family: Arial; font-size: 0.8vw; font-weight: normal;">Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design.</p>
@@ -239,7 +262,6 @@
     </section>
 
     <section style="position: relative; top: 410vh; left: 0vw;color: var(--text-color);" id="paslaugos">
-      <h2>Paslaugos:</h2> <div class="video1"></div>
       <div class="video1">
         <video width="700" height="500" controls loop>
             <source src="video/download.mp4" type="video/mp4">
@@ -250,21 +272,55 @@
             <source src="audio/em.mp3" type="audio/mpeg" style="background-color: black;">
         </audio>
       </div>
-      <footer>
-        <div class="footer-container">
-          <div class="social-icons">
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-          <div class="contact-info">
-            <p>Contact: email@example.com</p>
-            <p>Created by: Your Name</p>
-          </div>
-        </div>
-      </footer>
     </section>
+  
+    <section style="position: relative; top: 410vh; left: 0vw;color: var(--text-color);" id="forma">
+      <h1>Kontaktų forma</h1>
+    <form id="kontaktu-forma">
+        <label for="vardas">Vardas:</label>
+        <input type="text" id="vardas" name="vardas"><br><br>
+        <label for="pavarde">Pavardė:</label>
+        <input type="text" id="pavarde" name="pavarde"><br><br>
+        <label for="elpastas">El. pašto adresas:</label>
+        <input type="email" id="elpastas" name="elpastas"><br><br>
+        <label for="telefonas">Telefonas:</label>
+        <input type="tel" id="telefonas" name="telefonas"><br><br>
+        <label for="adresas">Adresas:</label>
+        <input type="text" id="adresas" name="adresas"><br><br>
+        <label for="pozymis1">Semestras 1:</label>
+        <input type="number" id="pozymis1" name="pozymis1"><br><br>
+        <label for="pozymis2">Semestras 2:</label>
+        <input type="number" id="pozymis2" name="pozymis2"><br><br>
+        <label for="pozymis3">Semestras 3:</label>
+        <input type="number" id="pozymis3" name="pozymis3"><br><br>
+        <label for="pozymis4">Semestras 4:</label>
+        <input type="number" id="pozymis4" name="pozymis4"><br><br>
+        <label for="pozymis5">Semestras 5:</label>
+        <input type="number" id="pozymis5" name="pozymis5"><br><br>
+        <button id="siusti" type="button">Siųsti</button>
 
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="rezultatas"></div>
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="contact-info">
+          <p>Contact: email@example.com</p>
+          <p>Created by: Your Name</p>
+        </div>
+      </div>
+    </footer>
+    </section>
   </main>
 <script>
 function myFunction() {
@@ -318,6 +374,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </script>
 <script src="functions.js"></script>
+<script src="script.js"></script>
+<script src="script1.js"></script>
 
 
 </body>

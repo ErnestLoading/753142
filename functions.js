@@ -10,7 +10,7 @@ const updateButton = () => {
 };
 
 themeToggleBtn.addEventListener("click", () =>{
-  body.classList.toggle("dark-mode"); // Perjungia klasę "dark-mode"
+  body.classList.toggle("dark-mode");
   updateButton();
 });
 updateButton();
